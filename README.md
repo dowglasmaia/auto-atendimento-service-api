@@ -7,7 +7,7 @@ Desenvolvida utilizando **Java 21** e **Spring WebFlux**, a API segue os princí
 
 A API implementa programação reativa para melhorar o desempenho e escalabilidade, proporcionando um fluxo de dados não-bloqueante que otimiza a alocação de recursos.
 
-A API está integrada com **CI/CD** através do **GitHub Actions** e utiliza **SonarQube** para análise contínua da qualidade do código.
+A API está integrada com **CI** através do **GitHub Actions** e utiliza **SonarQube** para análise contínua da qualidade do código.
 
 Você pode acessar o [contrato da API](src/main/resources/openapi/REQUEST-API.yaml) desenvolvido com **Swagger/OpenAPI** para obter mais detalhes sobre os endpoints e as especificações técnicas.
 
