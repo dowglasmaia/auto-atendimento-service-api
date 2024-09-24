@@ -165,11 +165,7 @@ Foram implementados testes de integração e unitários para garantir o correto 
   - Testes semelhantes para o fluxo de requisições do tipo "Other".
 
 - **Classe: `CommandInvokerTest`**
-  - **Executar
-
-Múltiplos Comandos** (`shouldExecuteMultipleCommands`): Assegura que múltiplos comandos são executados na sequência correta.
-
-Esses testes cobrem os principais cenários de distribuição e fila de requisições, garantindo que o comportamento da API está de acordo com as regras de negócio definidas.
+  - **Executar Múltiplos Comandos** (`shouldExecuteMultipleCommands`): Assegura que múltiplos comandos são executados na sequência correta.
 
 ---
 
