@@ -1,0 +1,130 @@
+openapi: 3.0.3
+info:
+  title: "Request Service API"
+  description: "API to manage request distribution and completion operations."
+  version: 1.0.0
+servers:
+  - url: "https://localhost:8099/api/requests"
+
+paths:
+  /requests:
+    post:
+      tags:
+        - requests
+      summary: Distribute a Request
+      description: Endpoint to distribute a new request to the appropriate agent.
+      operationId: distributeRequest
+      requestBody:
+        description: Data required to create and distribute the request.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Request'
+      responses:
+        201:
+          description: Request successfully distributed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestResponse'
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+        500:
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+
+  /requests/{agentId}/complete:
+    put:
+      tags:
+        - requests
+      summary: Complete a Request
+      description: Endpoint to complete a request assigned to a specific agent.
+      operationId: completeRequest
+      parameters:
+        - name: agentId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: The ID of the agent completing the request.
+        - name: requestId
+          in: query
+          required: true
+          schema:
+            type: string
+          description: The ID of the request to complete.
+        - name: requestType
+          in: query
+          required: true
+          schema:
+            type: string
+            enum:
+              - CARD_ISSUE
+              - LOAN_REQUEST
+              - OTHER
+          description: The type of request to complete.
+      responses:
+        200:
+          description: Request successfully completed
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+        404:
+          description: Request not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+        500:
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseError'
+
+components:
+  schemas:
+    Request:
+      type: object
+      required:
+        - subject
+        - customerId
+      properties:
+        subject:
+          type: string
+          enum:
+            - CARD_ISSUE
+            - LOAN_REQUEST
+            - OTHER
+          example: "CARD_ISSUE"
+        customerId:
+          type: string
+          example: "cust678"
+
+    RequestResponse:
+      type: object
+      properties:
+        requestId:
+          type: string
+          example: "12345"
+
+    ResponseError:
+      type: object
+      properties:
+        code:
+          type: string
+          example: 'ERR001'
+        message:
+          type: string
+          example: 'Error description'

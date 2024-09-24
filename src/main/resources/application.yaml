@@ -1,0 +1,14 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: maia-bot-service
+
+agent:
+  max-simultaneous-requests: 3
+
+
+logging:
+  level:
+    root: INFO
+    com.dowglasmaia.maiabotservice: DEBUG

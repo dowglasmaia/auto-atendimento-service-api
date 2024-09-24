@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+  maia-bot-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8099:8099"
+    networks:
+      - maianet
+
+
+networks:
+  maianet:
+    driver: bridge
+
