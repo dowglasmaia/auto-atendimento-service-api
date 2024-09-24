@@ -2,7 +2,7 @@ server:
   port: 8099
 spring:
   application:
-    name: maia-bot-service
+    name: auto-atendimento-service-api
 
 agent:
   max-simultaneous-requests: 3

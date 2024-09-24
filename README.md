@@ -11,6 +11,11 @@ A API está integrada com **CI** através do **GitHub Actions** e utiliza **Sona
 
 Você pode acessar o [contrato da API](src/main/resources/openapi/REQUEST-API.yaml) desenvolvido com **Swagger/OpenAPI** para obter mais detalhes sobre os endpoints e as especificações técnicas.
 
+
+Você pode acessar a [collection do Postman](src/main/resources/collection_postman/auto-atendimento-service-api.postman_collection.json), desenvolvida para facilitar os testes manuais da API.
+
+
+
 ---
 
 ## 📜 Sumário

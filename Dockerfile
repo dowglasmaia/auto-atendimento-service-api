@@ -12,8 +12,8 @@ LABEL MAINTAINER="DOWGLAS MAIA"
 ENV PORT=8099
 WORKDIR /usr/src/app
 RUN rm -f /etc/localtime && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
-COPY --from=build /api/target/*.jar /usr/src/app/maia-bot-service.jar
+COPY --from=build /api/target/*.jar /usr/src/app/auto-atendimento-service-api.jar
 
-ENTRYPOINT ["java" , "-Dfile.encoding=UTF-8", "-jar", "/usr/src/app/maia-bot-service.jar", "--server.port=${PORT}"]
+ENTRYPOINT ["java" , "-Dfile.encoding=UTF-8", "-jar", "/usr/src/app/auto-atendimento-service-api.jar", "--server.port=${PORT}"]
 
 EXPOSE ${PORT}

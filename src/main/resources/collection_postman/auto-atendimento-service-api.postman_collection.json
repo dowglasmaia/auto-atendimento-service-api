@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "931f1677-9396-48a1-9df4-579f7d7b96a5",
+		"name": "auto-atendimento-service-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5139994"
+	},
+	"item": [
+		{
+			"name": "OTHER-DistributeRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subject\": \"OTHER\",\r\n  \"customerId\": \"cust678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/api/v1/requests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"api",
+						"v1",
+						"requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CARD_ISSUE - DistributeRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subject\": \"CARD_ISSUE\",\r\n  \"customerId\": \"cust678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/api/v1/requests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"api",
+						"v1",
+						"requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOAN_REQUEST - DistributeRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subject\": \"LOAN_REQUEST\",\r\n  \"customerId\": \"cust678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/api/v1/requests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"api",
+						"v1",
+						"requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OTHER - completeRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subject\": \"LOAN_REQUEST\",\r\n  \"customerId\": \"cust678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/api/v1/requests/Other_Agent_1/complete?requestId=ade062a3-548d-474b-9bcc-0b00826d8828&requestType=OTHER",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"api",
+						"v1",
+						"requests",
+						"Other_Agent_1",
+						"complete"
+					],
+					"query": [
+						{
+							"key": "requestId",
+							"value": "ade062a3-548d-474b-9bcc-0b00826d8828"
+						},
+						{
+							"key": "requestType",
+							"value": "OTHER"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CARD_ISSUE - completeRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subject\": \"LOAN_REQUEST\",\r\n  \"customerId\": \"cust678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/api/v1/requests/Card_Agent_1/complete?requestId=ade062a3-548d-474b-9bcc-0b00826d8828&requestType=CARD_ISSUE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"api",
+						"v1",
+						"requests",
+						"Card_Agent_1",
+						"complete"
+					],
+					"query": [
+						{
+							"key": "requestId",
+							"value": "ade062a3-548d-474b-9bcc-0b00826d8828"
+						},
+						{
+							"key": "requestType",
+							"value": "CARD_ISSUE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOAN_REQUEST - completeRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subject\": \"LOAN_REQUEST\",\r\n  \"customerId\": \"cust678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8099/api/v1/requests/Loan_Agent_1/complete?requestId=ade062a3-548d-474b-9bcc-0b00826d8828&requestType=LOAN_REQUEST",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"api",
+						"v1",
+						"requests",
+						"Loan_Agent_1",
+						"complete"
+					],
+					"query": [
+						{
+							"key": "requestId",
+							"value": "ade062a3-548d-474b-9bcc-0b00826d8828"
+						},
+						{
+							"key": "requestType",
+							"value": "LOAN_REQUEST"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,7 +1,7 @@
 version: '3'
 services:
 
-  maia-bot-service:
+  auto-atendimento-service-api:
     build:
       context: .
       dockerfile: Dockerfile
