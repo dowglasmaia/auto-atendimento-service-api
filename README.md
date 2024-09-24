@@ -208,7 +208,7 @@ O **Strategy Pattern** define e encapsula diferentes estratégias de distribuiç
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seuprojeto/repo.git
+   git clone https://github.com/dowglasmaia/auto-atendimento-service-api
    ```
 
 2. **Rodando via Docker**:
