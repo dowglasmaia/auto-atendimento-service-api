@@ -36,6 +36,8 @@ Você pode acessar a [collection do Postman](src/main/resources/collection_postm
 
 Essas são algumas das tecnologias e ferramentas utilizadas no projeto:
 
+![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=dowglasmaia_auto-atendimento-service-api&metric=coverage)
+![SonarQube](https://img.shields.io/badge/-SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white)
 ![Java 21](https://img.shields.io/badge/-Java%2021-007396?style=flat-square&logo=java&logoColor=white)
 ![Spring WebFlux](https://img.shields.io/badge/-Spring%20WebFlux-6DB33F?style=flat-square&logo=spring&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -43,7 +45,7 @@ Essas são algumas das tecnologias e ferramentas utilizadas no projeto:
 ![Mockito](https://img.shields.io/badge/-Mockito-25A162?style=flat-square&logo=mockito&logoColor=white)
 ![Rest-Assured](https://img.shields.io/badge/-Rest--Assured-008CBA?style=flat-square&logo=rest-assured&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-![SonarQube](https://img.shields.io/badge/-SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white)
+
 
 ---
 

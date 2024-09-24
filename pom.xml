@@ -20,6 +20,13 @@
         <sonar.organization>dowglasmaia</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+
+        <sonar.exclusions>
+            **/exception/**,
+            **/infrastructure/**
+
+        </sonar.exclusions>
+
     </properties>
 
     <dependencies>
