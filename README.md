@@ -52,7 +52,7 @@ Essas são algumas das tecnologias e ferramentas utilizadas no projeto:
 ## 📑 Funcionalidades
 
 - **Distribuição Automática de Requisições**: A API distribui requisições automaticamente para agentes disponíveis ou coloca-as em uma fila até que um agente esteja disponível.
-- **Fila de Atendimento**: Requisições são enfileiradas quando todos os agentes de um time estão ocupados.
+- **Fila de Atendimento**: As solicitações são enfileiradas de acordo com o time e o tipo de solicitação. Quando todos os agentes de um time estão ocupados, as requisições são automaticamente colocadas em fila.
 - **Encerramento de Atendimento**: Agentes podem encerrar suas requisições via API, liberando espaço para novos atendimentos.
 - **Tipos de Requisição**:
   - **CARD_ISSUE**: Problemas com cartão.
